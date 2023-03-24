@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import Navbar from "./components/Navbar";
+import MainSection from "./components/MainSection";
+import PreAutomation from "./components/PreAutomation ";
+import PostAutomation from "./components/PostAutomation";
+import IncreasingProcess from "./components/IncreasingProcess";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="position-relative d-flex flex-column min_100_xl">
+        <Navbar />
+        <MainSection />
+        <PreAutomation />
+      </div>
+      <PostAutomation />
+      <IncreasingProcess />
+      <Footer />
+    </>
   );
 }
 
